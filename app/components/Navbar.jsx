@@ -29,7 +29,7 @@ const NavItem = ({ title, link, index, isActive }) => {
       })}
     >
       <Link href={link}>
-        <b>0{index + 1}</b> {title}
+        {title}
       </Link>
     </li>
   );
