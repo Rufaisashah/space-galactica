@@ -189,5 +189,15 @@ button {
 
   .hero {
     padding: 1rem !important;
+    
   }
+.mainContent {
+    padding-block-start: 140px;
+  }
+
+
 }
+
+
+
+

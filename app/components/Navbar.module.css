@@ -75,31 +75,57 @@
   border-block-end: var(--spacing-04) solid var(--border-color);
   margin-block-end: -4px;
 }
+
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
   .headerContainer {
-    flex-wrap: wrap;
-    padding: 0.5rem 1rem;
+    flex-direction: column;
+    height: auto;
+    max-height: none;
+    padding: 0.75rem 1rem;
     gap: 0.5rem;
-  }
-
-  .navbar {
-    width: 100%;
-    overflow-x: auto;
-  }
-
-  .navbarList {
-    gap: 0.5rem;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding-bottom: 0.25rem;
-  }
-
-  .navbarLinks {
-    font-size: 0.65rem;
-    white-space: nowrap;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
   }
 
   .decorativeLine {
     display: none;
+  }
+
+  .navbarLogo {
+    width: 100%;
+    margin: 0;
+  }
+
+  .navbarLogo a {
+    font-size: 1rem;
+  }
+
+  .navbar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+  }
+
+  .navbarBG {
+    display: none;
+  }
+
+  .navbarList {
+    padding: 0;
+    gap: 0.75rem;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .navbarLinks {
+    font-size: 0.6rem;
+    white-space: nowrap;
+  }
+
+  .navbarLinks a {
+    font-size: 0.6rem;
   }
 }
