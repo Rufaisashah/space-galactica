@@ -179,3 +179,15 @@ button {
   justify-content: space-between;
   min-height: 100vh;
 }
+
+@media (max-width: 768px) {
+ 
+  .heroJumbo {
+    font-size: 4rem !important;
+  }
+
+
+  .hero {
+    padding: 1rem !important;
+  }
+}
